@@ -13,12 +13,11 @@ public class CoinStack {
         this.coinsStack.put(Coins.TWO_DOLLAR,0);
     }
 
-    public boolean fillMoney(List<Coins> money){
+    public void fillMoney(List<Coins> money){
         for(Coins coin : money){
                 this.coinsStack.put(coin, this.coinsStack.get(coin) + 1);
 
             }
-            return true;
         }
     }
 
